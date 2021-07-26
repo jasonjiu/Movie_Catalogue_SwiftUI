@@ -11,7 +11,7 @@ struct Movie: Decodable, Identifiable {
     var original_title: String
     var adult: Bool
     var overview: String
-    var release_date: String
+    var release_date: String?
 }
 
 struct MovieList: Decodable {

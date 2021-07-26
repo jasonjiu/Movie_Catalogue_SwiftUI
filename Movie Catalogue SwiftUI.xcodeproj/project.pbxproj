@@ -14,10 +14,15 @@
 		9C1F327124FF3F0000CC73C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1F327024FF3F0000CC73C9 /* Assets.xcassets */; };
 		9C1F327424FF3F0000CC73C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1F327324FF3F0000CC73C9 /* Preview Assets.xcassets */; };
 		9C1F327724FF3F0000CC73C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1F327524FF3F0000CC73C9 /* LaunchScreen.storyboard */; };
-		9C1F328324FF403200CC73C9 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F328224FF403200CC73C9 /* Movie.swift */; };
-		9C1F328524FF404500CC73C9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F328424FF404500CC73C9 /* NetworkManager.swift */; };
 		9C1F328724FF4E5E00CC73C9 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F328624FF4E5E00CC73C9 /* MovieDetail.swift */; };
 		9C1F328924FF4E7000CC73C9 /* MovieRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F328824FF4E7000CC73C9 /* MovieRow.swift */; };
+		CE8A82EE26AE813C00EF53B4 /* MovieNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A82ED26AE813C00EF53B4 /* MovieNetworkManager.swift */; };
+		CE8A82F726AE91C500EF53B4 /* MovieGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A82F626AE91C500EF53B4 /* MovieGenre.swift */; };
+		CE8A82FE26AE92FA00EF53B4 /* GenreNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A82FD26AE92FA00EF53B4 /* GenreNetworkManager.swift */; };
+		CE8A830526AE97C300EF53B4 /* GenreRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A830426AE97C300EF53B4 /* GenreRow.swift */; };
+		CE8A831026AEA4D200EF53B4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A830F26AEA4D200EF53B4 /* Movie.swift */; };
+		CE8A831326AEB0EB00EF53B4 /* MovieDetailGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A831226AEB0EB00EF53B4 /* MovieDetailGenre.swift */; };
+		CE8A831626AEB12F00EF53B4 /* MovieRowGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A831526AEB12F00EF53B4 /* MovieRowGenre.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,12 +35,17 @@
 		9C1F327324FF3F0000CC73C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9C1F327624FF3F0000CC73C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C1F327824FF3F0000CC73C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C1F328224FF403200CC73C9 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		9C1F328424FF404500CC73C9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		9C1F328624FF4E5E00CC73C9 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		9C1F328824FF4E7000CC73C9 /* MovieRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRow.swift; sourceTree = "<group>"; };
 		A0E695849BD12593D7680A35 /* Pods-Movie Catalogue SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie Catalogue SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-Movie Catalogue SwiftUI/Pods-Movie Catalogue SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		B189428EB1CD86EB8ADE38A3 /* Pods_Movie_Catalogue_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movie_Catalogue_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8A82ED26AE813C00EF53B4 /* MovieNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNetworkManager.swift; sourceTree = "<group>"; };
+		CE8A82F626AE91C500EF53B4 /* MovieGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGenre.swift; sourceTree = "<group>"; };
+		CE8A82FD26AE92FA00EF53B4 /* GenreNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreNetworkManager.swift; sourceTree = "<group>"; };
+		CE8A830426AE97C300EF53B4 /* GenreRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreRow.swift; sourceTree = "<group>"; };
+		CE8A830F26AEA4D200EF53B4 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		CE8A831226AEB0EB00EF53B4 /* MovieDetailGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailGenre.swift; sourceTree = "<group>"; };
+		CE8A831526AEB12F00EF53B4 /* MovieRowGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRowGenre.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +98,6 @@
 		9C1F326924FF3EFC00CC73C9 /* Movie Catalogue SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				9C1F328124FF3F7A00CC73C9 /* Network */,
 				9C1F328024FF3F4500CC73C9 /* View */,
 				9C1F327F24FF3F4000CC73C9 /* Model */,
 				9C1F327E24FF3F3700CC73C9 /* Delegate */,
@@ -120,7 +129,10 @@
 		9C1F327F24FF3F4000CC73C9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9C1F328224FF403200CC73C9 /* Movie.swift */,
+				CE8A82ED26AE813C00EF53B4 /* MovieNetworkManager.swift */,
+				CE8A82F626AE91C500EF53B4 /* MovieGenre.swift */,
+				CE8A82FD26AE92FA00EF53B4 /* GenreNetworkManager.swift */,
+				CE8A830F26AEA4D200EF53B4 /* Movie.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -131,16 +143,11 @@
 				9C1F326E24FF3EFC00CC73C9 /* ContentView.swift */,
 				9C1F328624FF4E5E00CC73C9 /* MovieDetail.swift */,
 				9C1F328824FF4E7000CC73C9 /* MovieRow.swift */,
+				CE8A830426AE97C300EF53B4 /* GenreRow.swift */,
+				CE8A831226AEB0EB00EF53B4 /* MovieDetailGenre.swift */,
+				CE8A831526AEB12F00EF53B4 /* MovieRowGenre.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		9C1F328124FF3F7A00CC73C9 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				9C1F328424FF404500CC73C9 /* NetworkManager.swift */,
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +179,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Jason Dicoding IOS";
 				TargetAttributes = {
 					9C1F326624FF3EFC00CC73C9 = {
@@ -258,13 +265,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8A831326AEB0EB00EF53B4 /* MovieDetailGenre.swift in Sources */,
+				CE8A830526AE97C300EF53B4 /* GenreRow.swift in Sources */,
 				9C1F326B24FF3EFC00CC73C9 /* AppDelegate.swift in Sources */,
+				CE8A82EE26AE813C00EF53B4 /* MovieNetworkManager.swift in Sources */,
+				CE8A82FE26AE92FA00EF53B4 /* GenreNetworkManager.swift in Sources */,
+				CE8A831026AEA4D200EF53B4 /* Movie.swift in Sources */,
 				9C1F326D24FF3EFC00CC73C9 /* SceneDelegate.swift in Sources */,
-				9C1F328524FF404500CC73C9 /* NetworkManager.swift in Sources */,
+				CE8A831626AEB12F00EF53B4 /* MovieRowGenre.swift in Sources */,
 				9C1F328724FF4E5E00CC73C9 /* MovieDetail.swift in Sources */,
 				9C1F328924FF4E7000CC73C9 /* MovieRow.swift in Sources */,
-				9C1F328324FF403200CC73C9 /* Movie.swift in Sources */,
 				9C1F326F24FF3EFC00CC73C9 /* ContentView.swift in Sources */,
+				CE8A82F726AE91C500EF53B4 /* MovieGenre.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +320,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -368,6 +381,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

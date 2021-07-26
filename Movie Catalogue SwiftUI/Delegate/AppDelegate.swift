@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Movie Catalogue SwiftUI
 //
-//  Created by PROSIA on 02/09/20.
-//  Copyright © 2020 Jason Dicoding IOS. All rights reserved.
+//  Created by PROSIA on 26/07/21.
+//  Copyright © 2020 Jason IOS. All rights reserved.
 //
 
 import UIKit

@@ -1,15 +1,16 @@
 //
-//  MovieRow.swift
+//  MovieRowGenre.swift
 //  Movie Catalogue SwiftUI
 //
-//  Created by PROSIA on 26/07/21.
-//  Copyright © 2020 Jason IOS. All rights reserved.
+//  Created by Jason Prosia on 26/07/21.
+//  Copyright © 2021 Jason Dicoding IOS. All rights reserved.
 //
+
 import URLImage
 import SwiftUI
 
-struct MovieRow : View {
-    var movie: MovieListItem
+struct MovieRowGenre : View {
+    var movie: Movie
     
     var body: some View {
         HStack {
@@ -28,7 +29,7 @@ struct MovieRow : View {
                     Spacer()
                 }
                 HStack {
-                    Text(movie.release_date).foregroundColor(.gray)
+                    Text(movie.release_date ?? "Null").foregroundColor(.gray)
                     Spacer()
                     Text("Rate: \(movie.vote_average.format())")
                 }
@@ -50,9 +51,10 @@ struct MovieRow : View {
     }
 }
 
-//extension Float {
-//    func format() -> String {
-//        return String(format: "%.2f",self)
-//    }
-//}
+extension Float {
+    func format() -> String {
+        return String(format: "%.2f",self)
+    }
+}
+
 
