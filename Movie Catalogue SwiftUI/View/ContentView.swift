@@ -11,6 +11,7 @@ import SwiftUI
 struct ContentView : View {
     @ObservedObject var movieManager = MovieManager()
     @ObservedObject var movieGenre = GenreManager()
+    
     var body: some View {
         
         NavigationView {
@@ -27,17 +28,19 @@ struct ContentView : View {
                 
                 if movieGenre.filterBool == true{
                     List(movieGenre.movies.results) { movie in
-                        NavigationLink(destination: MovieDetailGenre(movie: movie)){
-                            MovieRowGenre(movie: movie)
-                        }
+                        NavigationLink(destination: MovieDetailGenre(movie: movie).environmentObject(movieGenre)){
+                                MovieRowGenre(movie: movie)
+                            }
+                        
                     }
                 }else{
                     List(movieManager)
                     { (movies: MovieListItem) in
-                        NavigationLink(destination: MovieDetails(movie: movies)){
+                        NavigationLink(destination: MovieDetails(movie: movies).environmentObject(movieGenre)){
                             MovieRow(movie: movies)
                                 .onAppear(){
                                     self.movieManager.loadMoreMovies(currentItem: movies)
+
                                 }
                         }
                     }
