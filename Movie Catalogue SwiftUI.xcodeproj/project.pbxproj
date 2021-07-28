@@ -18,6 +18,7 @@
 		9C1F328924FF4E7000CC73C9 /* MovieRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F328824FF4E7000CC73C9 /* MovieRow.swift */; };
 		CE765B4126B10F9E00849771 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE765B4026B10F9E00849771 /* VideoView.swift */; };
 		CE765B4426B1156D00849771 /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE765B4326B1156D00849771 /* Trailer.swift */; };
+		CE765B4C26B12EC000849771 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE765B4B26B12EC000849771 /* Review.swift */; };
 		CE8A82EE26AE813C00EF53B4 /* MovieNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A82ED26AE813C00EF53B4 /* MovieNetworkManager.swift */; };
 		CE8A82F726AE91C500EF53B4 /* MovieGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A82F626AE91C500EF53B4 /* MovieGenre.swift */; };
 		CE8A82FE26AE92FA00EF53B4 /* GenreNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A82FD26AE92FA00EF53B4 /* GenreNetworkManager.swift */; };
@@ -43,6 +44,7 @@
 		B189428EB1CD86EB8ADE38A3 /* Pods_Movie_Catalogue_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movie_Catalogue_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE765B4026B10F9E00849771 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		CE765B4326B1156D00849771 /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
+		CE765B4B26B12EC000849771 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		CE8A82ED26AE813C00EF53B4 /* MovieNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNetworkManager.swift; sourceTree = "<group>"; };
 		CE8A82F626AE91C500EF53B4 /* MovieGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGenre.swift; sourceTree = "<group>"; };
 		CE8A82FD26AE92FA00EF53B4 /* GenreNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreNetworkManager.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				CE8A82FD26AE92FA00EF53B4 /* GenreNetworkManager.swift */,
 				CE8A830F26AEA4D200EF53B4 /* Movie.swift */,
 				CE765B4326B1156D00849771 /* Trailer.swift */,
+				CE765B4B26B12EC000849771 /* Review.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				9C1F326B24FF3EFC00CC73C9 /* AppDelegate.swift in Sources */,
 				CE8A82EE26AE813C00EF53B4 /* MovieNetworkManager.swift in Sources */,
 				CE8A82FE26AE92FA00EF53B4 /* GenreNetworkManager.swift in Sources */,
+				CE765B4C26B12EC000849771 /* Review.swift in Sources */,
 				CE765B4426B1156D00849771 /* Trailer.swift in Sources */,
 				CE8A831026AEA4D200EF53B4 /* Movie.swift in Sources */,
 				9C1F326D24FF3EFC00CC73C9 /* SceneDelegate.swift in Sources */,
@@ -353,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -408,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -9,10 +9,12 @@
 import SwiftUI
 import URLImage
 let BASE_IMAGE_URL2 = "https://image.tmdb.org/t/p/original/"
+
+
 struct MovieDetailGenre : View {
     var movie: Movie
     @ObservedObject var movieGenre = GenreManager()
-  
+    
     var body: some View {
         
         VStack {
@@ -23,6 +25,7 @@ struct MovieDetailGenre : View {
                     
                 }.onAppear(){
                     movieGenre.loadTrailer(videoId: movie.id)
+                    movieGenre.loadReview(videoId: movie.id)
                 }
                 
                 ForEach(movieGenre.trailers.results.prefix(3)){ trailer in
@@ -33,12 +36,34 @@ struct MovieDetailGenre : View {
                 }
                 
                 HStack {
-                    Text("Description").foregroundColor(.gray)
+                    Text("Description")
+                        .foregroundColor(Color.ui.blue)
+                        .fontWeight(.bold)
                     Spacer()
+                }.padding(20)
+                
+                GroupBox{
+                    Text(movie.overview).lineLimit(nil)
                 }
-                Text(movie.overview).lineLimit(nil)
                 Spacer()
+                
+                HStack{
+                    Text("Review")
+                        .foregroundColor(Color.ui.blue)
+                        .fontWeight(.bold)
+                    Spacer()
+                }.padding(20)
+                
+                ForEach(movieGenre.review.results){ review in
+                    VStack(alignment: .leading, spacing: 5){
+                        GroupBox{
+                            Text("Author: " + review.author).padding(.bottom, 20).foregroundColor(Color.ui.yellow)
+                            Text(review.content).lineLimit(nil)
+                        }
+                    }
+                }
             }
+            
         }.navigationBarTitle(Text(movie.title), displayMode: .inline)
         .padding()
     }
